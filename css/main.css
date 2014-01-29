@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Dress.is custom styles
+   ========================================================================== */
+
+.navbar-brand {
+	margin: 0px;
+	padding: 0px;
+}
+
+.updates .badge {
+	border-radius: 4px;
+	line-height: 16px;
+}
+
+.badge-info {
+  background-color: #428bca; 
+}
+
+.badge-info:hover {
+  background-color: #2a6496;
+}
+
+.updates {
+	font-size: 18px;
+}
+
+/**
+ * Extra large button extensions. Extends `.btn`.
+ */
+.btn-xlarge {
+	padding: 18px 28px;
+	font-size: 22px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+}
+
+/**
+ * Extra large button extensions. Extends `.btn`.
+ */
+.btn-xxl {
+	padding: 22px 32px;
+	font-size: 34px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+}
+
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FAQ styles */
+details {
+	font-size: 16px;
+	margin: 15px 0;
+}
+
+details p {
+	margin-top: 10px;
+}
+
+details summary {
+	font-size: 20px;
+	color: #0088d6;
+}
+
+details summary:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+
+footer {
+	margin-top: 60px;
+}
+
+
+
