@@ -29,10 +29,10 @@
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header pull-left">
-          <a class="navbar-brand" href="#"><img src="img/logo-dress.png" /></a>
+          <a class="navbar-brand" href="#"><img src="img/labs-logo.png" /></a>
         </div>
 		<div class="navbar-header pull-right">
-		  <p class="navbar-text navbar-right updates"><a href="http://blog.dress.is" tile="Read latest updates on our blog" class="navbar-link">Updates <span class="badge badge-info">1</span></a></p>
+		  <p class="navbar-text navbar-right updates"><a href="http://twitter.com/fnflabs" tile="Follow us on twitter" class="navbar-link">Twitter</a></p>
 		</div>
       </div>
     </div>
@@ -48,16 +48,88 @@
       
       <div class="row featurette">
         <div class="col-sm-7">
-          <div class="flex-video widescreen">
-            <iframe width="533" height="300" src="//www.youtube.com/embed/CfLxeWgynM0" frameborder="0" allowfullscreen></iframe>
-          </div>
+
+			<div class="bs-example">
+			  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000" data-pause="hover">
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				  <div class="item active">
+					<img src="img/carousel-1-slide.png" alt="First slide">
+				  </div>
+				  <div class="item">
+					<img src="img/carousel-2-slide.png" alt="Second slide">
+				  </div>
+				  <div class="item">
+					<img src="img/carousel-3-slide.png" alt="Third slide">
+				  </div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			  </div>
+			</div><!-- /example -->
+          
         </div>
         <div class="col-sm-5" >
-          <h1  class="text-center">Infographic</h1>
-          <p class="lead">Beatiful infographic which makes a difference</p>
-          <p class="text-center hidden-xs">Order or call +1 4157354337</p>
-          <p class="text-center"><a class="btn btn-primary btn-xlarge" title="Preorder on Kickstarter" href="http://www.kickstarter.com" target="_blank">Get started</a></p>
+          <h1  class="text-center">Need an infographic?</h1>
+          <p class="lead text-center">Let's bring your story to life visually</p>
+          <p class="text-center"><a class="btn btn-primary btn-xlarge" data-toggle="modal" data-target="#infoModal" title="Request Free Consultation" href="http://www.kickstarter.com" target="_blank">Get started</a></p>
+          <p class="text-center hidden-xs">Or call 1 4157354337</p>
         </div>
+        
+
+		<!-- Modal -->
+		<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Contact us to get started</h4>
+			  </div>
+			  <form  role="form">
+			  <div class="modal-body">
+
+					<div class="form-group">
+						<input name="name" placeholder="Full name" class="form-control" type="text">
+					</div>
+		
+					<div class="form-group">
+						<input name="company" placeholder="Your company or project" class="form-control" type="text">
+					</div>
+					
+					<div class="form-group">
+						<input name="email" placeholder="Your email address" class="form-control" type="text">
+					</div>
+		
+					<div class="form-group">
+						<input name="phone" placeholder="Phone number" class="form-control" type="text">
+					</div>
+					
+					<div class="form-group">
+						<textarea name="nature" placeholder="Describe your project" class="form-control" rows="5"></textarea>
+					</div>
+
+
+			  </div>
+			  <div class="modal-footer">
+					<div class="form-group">
+						<button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+					</div">
+					<p class="help-block text-center">or call at</p>
+					<p class="help-block text-center"><strong>1.415.735.4337</strong></p>
+			  </div>
+			  </form>
+			</div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->        
+        
       </div>
 
       <hr class="featurette-divider">
@@ -102,13 +174,159 @@
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
+        <div class="container offer" id="offer">
+          <div class="col-md-12 text-center"><h2>What We Offer</h2></div>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+             <span class="glyphicon glyphicon-time"></span>
+              <h3>timely delievery</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+              <span class="glyphicon glyphicon-fire"></span>
+              <h3>no risk</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
+            </div><!--/span-->
+            <div class="clearfix visible-md"></div>
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+             <span class="glyphicon glyphicon-certificate"></span>
+              <h3>unique approach</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.  </p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+             <span class="glyphicon glyphicon-signal"></span>
+              <h3>visuals are viral</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
+            </div><!--/span-->
+            <div class="clearfix visible-md"></div>
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+              <span class="glyphicon glyphicon-wrench"></span>
+              <h3>premium support</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna. </p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4 text-center">
+              <span class="glyphicon glyphicon-usd"></span>
+              <h3>money back guarantee</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+        
+        <hr class="featurette-divider">
+        
+        
+        
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="imagePrevModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			  <h4 class="modal-title">Infographic Example</h4>
+			</div>
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
+			  <span>Infographic projects start at $1000&nbsp;&nbsp;</span>
+			  <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target="#infoModal">Start a project</button>
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->       
+        
+        <div class="container offer" id="offer">
+          <div class="col-md-12 text-center">
+          	<h2>Examples Of Our Work</h2>
+          </div>
+          <div class="row">
+            <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+              <p>
+              	 <a data-toggle="modal" data-remote-image="http://i2.wp.com/fundersandfounders.com/wp-content/uploads/2013/05/how-startup-funding-works-infographic.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-1 "></div>
+            </div><!--/span-->
+
+            <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+              <p>
+                 <a data-toggle="modal" data-remote-image="http://i2.wp.com/fundersandfounders.com/wp-content/uploads/2013/08/serial-entrepreneurs-how-to-pursue-multiple-opportunities-infographic.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-2"></div>
+            </div><!--/span-->
+            
+            <div class="clearfix visible-sm"></div>
+
+
+            <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.  </p>
+              <p>
+                 <a data-toggle="modal" data-remote-image="http://i0.wp.com/fundersandfounders.com/wp-content/uploads/2013/02/everyone-will-become-entrepreneur.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-3"></div>
+            </div><!--/span-->
+
+            <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.  </p>
+              <p>
+                 <a data-toggle="modal" data-remote-image="http://i1.wp.com/fundersandfounders.com/wp-content/uploads/2013/04/from-poor-to-rich-billionare-infographic.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-4"></div>
+            </div><!--/span-->
+            
+            <div class="clearfix visible-sm"></div>
+
+ 
+             <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.  </p>
+              <p>
+                 <a data-toggle="modal" data-remote-image="http://i1.wp.com/fundersandfounders.com/wp-content/uploads/2013/01/inside-the-mind-of-vc-Jeff-Clavier.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-5"></div>
+            </div><!--/span-->
+
+            <div class="col-3 col-sm-3 col-lg-2">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.  </p>
+              <p>
+                 <a data-toggle="modal" data-remote-image="http://31.media.tumblr.com/f27494d849465aa2e078f358196261e0/tumblr_ms78bgn6ts1s6bw99o1_1280.png" 
+              	    data-target="#imagePrevModal" class="btn btn-default">View details »</a>
+              </p>
+            </div><!--/span-->
+            <div class="col-3 col-sm-3 col-lg-2">
+              <div class="graphic-example-6"></div>
+            </div><!--/span-->
+            
+            <div class="clearfix visible-sm"></div>
+              
+             
+          </div><!--/row-->
+        </div><!--/span-->
+
+      <hr class="featurette-divider">   
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
       	<div class="col-md-2"></div>
       	<div class="col-md-8">
-			<p class="lead text-center">If you want to get one, click below, preordering the graphic</p>
-            <p class="text-center"><a class="btn btn-primary btn-xxl" href="http://www.kickstarter.com" title="Preorder the dress" target="_blank">Get started</a></p>
+			<p class="lead text-center">Let's bring your story to life</p>
+            <p class="text-center"><a class="btn btn-primary btn-xxl" data-toggle="modal" data-target="#infoModal" href="http://www.kickstarter.com" title="Preorder the dress" target="_blank">Get started</a></p>
       	</div>
       	<div class="col-md-2"></div>
       </div><!-- /.row -->
@@ -149,13 +367,13 @@ For easy hygiene maintenance we recommend you have two dresses, so always have a
         <div class="row">
 			<div class="col-md-6">
 				<details>
-				  <summary>How long can I wear this dress?</summary>
+				  <summary>Who needs an infographic?</summary>
 				  <p>As long as you like. We made this dress durable so it can withstand years of wear and transformations.</p>
 				</details>        
 			</div>
 			<div class="col-md-6">
 				<details>
-				  <summary>Can I wear it with a bra?</summary>
+				  <summary>How can I orders one?</summary>
 				  <p>Yes. There are many designs that cover the back completely. Some designs call for a strapless bra, and those with the back open entirely would be better off with  adhesive cups.</p>
 				</details>
 			</div>
@@ -163,13 +381,13 @@ For easy hygiene maintenance we recommend you have two dresses, so always have a
         <div class="row">
 			<div class="col-md-6">
 				<details>
-				  <summary>Can I wear the dress in cold weather?</summary>
+				  <summary>Does infographic help to drive more traffic?</summary>
 				  <p>Yes, because the dress has layers. Plus, it allows for a layer underneath, something like a tube or a tank top.</p>
 				</details>        
 			</div>
 			<div class="col-md-6">
 				<details>
-				  <summary>Is is suitable for all ages?</summary>
+				  <summary>What tools are you using to create an infographic?</summary>
 				  <p>Yes, the dress can be made to look business-like, party-like, conservative and seductive.</p>
 				</details>
 			</div>
@@ -188,40 +406,14 @@ For easy hygiene maintenance we recommend you have two dresses, so always have a
 				</details>
 			</div>
         </div>
-        <div class="row">
-			<div class="col-md-6">
-				<details>
-				  <summary>Where can I try on the dress?</summary>
-				  <p>Right here on this website soon you we will be able to put in a virtual fitting room, where you can try on different designs using your webcam.</p>
-				</details>        
-			</div>
-			<div class="col-md-6">
-				<details>
-				  <summary>Is this dress suitable for all ages?</summary>
-				  <p>Yes, the dress can be made to look business-like, party-like, conservative and seductive.</p>
-				</details>
-			</div>
-        </div>
-        <div class="row">
-			<div class="col-md-6">
-				<details>
-				  <summary>Is it hard to tie the designs?</summary>
-				  <p>Most of the designs are very easy to do. For all designs there will be an app with full list of designs and how to do them.</p>
-				</details>        
-			</div>
-			<div class="col-md-6">
-				<details>
-				  <summary>How can I contact you or stay updated on what happens?</summary>
-				  <p>Stay in touch by following our <a href="http://blog.dress.is" title="Read our blog">blog updates</a>, join us on <a href="http://twitter.com/dressist" title="Follow us on twitter"> Twitter</a>. If you have a question, <a href="https://twitter.com/intent/tweet?text=@dressist&related=dressist" title="Tweet your question"> tweet us at @dressist</a></p>
-				</details>
-			</div>
-        </div>
+
       </div>
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="http://twitter.com/dressist">Twitter</a></p>
-        <p>&copy; 2013 Dress.is, Inc. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="http://blog.dress.is">Updates</a></p>
+        <p class="pull-right hidden-xs">Call us&nbsp;<strong>1 4157354337</strong>&nbsp;&nbsp;</p>
+        <p>&copy; 2013 Funders and Founders, Inc.  &middot; <a href="http://fundersandfounders.com">Visual Blog</a> &middot; <a href="privacy.html">Privacy</a></p>
       </footer>
 
     </div><!-- /.container -->   
@@ -249,6 +441,8 @@ For easy hygiene maintenance we recommend you have two dresses, so always have a
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+            
+            
         </script>
     </body>
 </html>

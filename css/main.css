@@ -100,5 +100,52 @@ footer {
 	margin-top: 60px;
 }
 
+.offer .glyphicon {
+	margin-top: 35px;
+	font-size: 48px;
+	color: #f56ba4;
+}
+
+.graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 {
+	background-image: url(../img/thumbnails-infographics.jpg);
+	background-repeat:no-repeat;
+	width: 175px;
+    height: 175px;
+    -webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	margin: 0px 0px 80px 0;
+}
+
+.graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 : hover {
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: crosshair;
+}
+
+.graphic-example-1 {
+	background-position: -200px 0;
+}
+
+.graphic-example-2 {
+	background-position: 0 0;
+}
+
+.graphic-example-3 {
+	background-position: 0 -200px;
+}
+
+.graphic-example-4 {
+	background-position: -400px 0px;
+}
+
+.graphic-example-5 {
+	background-position: -400px -200px;
+}
+
+.graphic-example-6 {
+	background-position: -200px -200px;
+}
+
 
 
