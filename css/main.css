@@ -91,9 +91,8 @@ details summary:hover {
 	cursor: pointer;
 }
 
-
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  .flex-video { padding-top: 0; }
+.infographic-explanation {
+	
 }
 
 footer {
@@ -147,5 +146,59 @@ footer {
 	background-position: -200px -200px;
 }
 
+.example-thumbnail:hover {
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+}
+
+.carousel-indicators li{
+	background-color: #3276b1;
+	border: 1px solid #E0E0E0;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #3276b1;
+}
+
+/* responsive styles */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-panel h1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.main-panel {
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-panel {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+
+@media (max-width: 768px) {
+  .main-panel h1 {
+    font-size: 28px;
+  }
+  
+  .work-examples p{
+    text-align: center;
+    margin: 0 15%;
+  }
+  
+  .example-thumbnail > div {  
+    margin: auto;
+  }
+}
 
 
