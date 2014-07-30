@@ -8,7 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Infographic at F&F labs</title>
       <meta name="description" content="Minimalist dress transformable into 100 designs, fit for any situation. Do more, dress less.">
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <style>
@@ -26,7 +26,7 @@
         <![endif]-->
 
     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header pull-left">
           <a class="navbar-brand" href="#"><img src="img/labs-logo.png" /></a>
@@ -35,7 +35,7 @@
           <p class="navbar-text navbar-right updates"><a href="http://twitter.com/fnflabs" tile="Follow us on twitter" class="navbar-link">Twitter</a></p>
         </div>
       </div>
-    </div>
+    </nav>
     
     
     <!-- Product -->    
@@ -60,11 +60,6 @@
     
     <div class="container marketing">
       <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-sm-6">
-          <p>Infographic is design, data and journalism</p>
-        </div>
-      </div>
       <div class="row featurette infographic-explanation">
         <div class="col-sm-6">
           <h2 class="featurette-heading">Design</h2>
@@ -262,25 +257,28 @@ We adapt to your feedback at every iteration.</p>
             </a>  
           </div><!--/span-->
           
-          <div class="clearfix visible-sm"></div>
-            
+          <div class="clearfix visible-sm"></div>           
            
         </div><!--/row-->
       </div><!--/span-->
 
       <hr class="featurette-divider">   
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-      	<div class="col-md-2"></div>
-      	<div class="col-md-8">
-			<p class="lead text-center">Let's bring your story to life</p>
-            <p class="text-center"><a class="btn btn-primary btn-xxl" data-toggle="modal" data-target="#infoModal" href="http://www.kickstarter.com" title="Preorder the dress" target="_blank">Get started</a></p>
-      	</div>
-      	<div class="col-md-2"></div>
-      </div><!-- /.row -->
+      <div class="container" id="CALL-TO-ACTION">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <p class="lead text-center">Let's bring your story to life</p>
+            <p class="text-center">
+              <a class="btn btn-primary btn-xxl" data-toggle="modal" data-target="#infoModal" href="http://www.kickstarter.com" title="Preorder the dress" target="_blank">Get started</a>
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
 
       <hr class="featurette-divider">      
+      
       
       <div class="container FAQ" id="FAQ">
         <div class="col-md-12 text-center"><h2>Frequently Asked Questions</h2></div>
@@ -441,9 +439,7 @@ We adapt to your feedback at every iteration.</p>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-        
-        
+        s.parentNode.insertBefore(g,s)}(document,'script'));        
     </script>
   </body>
 </html>
