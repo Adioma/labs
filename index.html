@@ -18,6 +18,7 @@
       </style>
       <link rel="stylesheet" href="css/main.css">
       <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
 
       <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
@@ -51,7 +52,7 @@
         <div class="col-sm-5 main-panel">
           <h1  class="text-center">Need an infographic?</h1>
           <p class="lead text-center" id="call-to-action">Let's bring your story to life visually</p>
-          <p class="text-center"><a class="btn btn-primary btn-xlarge" data-toggle="modal" data-target="#infoModal" title="Request Free Consultation" href="http://www.kickstarter.com" target="_blank">Get started</a></p>
+          <p class="text-center"><a class="btn btn-primary btn-xlarge" data-toggle="modal" data-target="#infoModal" title="Request Free Consultation" href="#" target="_blank">Get started</a></p>
           <p class="text-center text-info"><small>Or call 1.415.735.4337</small></p>
         </div>
                 
@@ -349,7 +350,7 @@ We adapt to your feedback at every iteration.</p>
     <div class="container">
       <footer> 
         <p class="pull-right"><a href="http://twitter.com/fnflabs" title="Ask us anything on Twitter" class="navbar-link" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></p>
-        <p class="pull-right hidden-xs"><i class="fa fa-phone fa-lg"></i>&nbsp;<strong>1 4157354337</strong>&nbsp;&nbsp;&nbsp;</p>
+        <p class="pull-right hidden-xs"><i class="fa fa-phone fa-lg"></i>&nbsp;<strong>1 415.735.43.37</strong>&nbsp;&nbsp;&nbsp;</p>
         <p>&copy; 2013 Funders and Founders, Inc.  &middot; <a href="http://fundersandfounders.com">Visual Blog</a> &middot; <a href="privacy.html">Privacy</a></p>
       </footer>        
     </div>
@@ -382,33 +383,103 @@ We adapt to your feedback at every iteration.</p>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel">Contact us to get started</h4>
           </div>
-          <form  role="form">
+          <form id="contact-us" role="form"
+                data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
             <div class="modal-body">
 
               <div class="form-group">
-                <input name="name" placeholder="Full name" class="form-control" type="text">
+                <input name="name" placeholder="Full name" class="form-control" type="text" maxlength="140"
+                          data-bv-stringlength-min="3"
+                          data-bv-stringlength-message="Your name should be at least 3 characters">
+                
               </div>
 
               <div class="form-group">
-                <input name="company" placeholder="Your company or project" class="form-control" type="text">
+                <input name="company" placeholder="Your company or project title" class="form-control" type="text" maxlength="140"
+                       data-bv-notempty="true"
+                       data-bv-notempty-message="Enter your company or infographic related project name"
+                       data-bv-stringlength-min="2"
+                       data-bv-stringlength-max="140"
+                       data-bv-stringlength-message="Your company or project title should be at least 2 characters">
               </div>
-      
+                 
               <div class="form-group">
-                <input name="email" placeholder="Your email address" class="form-control" type="text">
+                <textarea name="description" placeholder="Describe your project" class="form-control" 
+                          rows="5" maxlength="1600"
+                          data-bv-notempty="true"
+                          data-bv-notempty-message="Project description is required and cannot be empty"
+                          data-bv-stringlength-min="140"
+                          data-bv-stringlength-max="1600"
+                          data-bv-stringlength-message="Description length must be between 140 and 1600 characters"></textarea>
               </div>
+                            
+              <div class="form-group">
+                <select name="budget" class="form-control" placeholder="What is your budget for this project?" style="font-family:'FontAwesome', Arial;">
+                  <option disabled selected>What is your budget for this project?</option>
+                  <option label="$1000 - $5000 &#xf0d6;">$1000-$5000</option>
+                  <option label="$5000 - $10k &nbsp; &#xf0d6; &#xf0d6;">$5000-$10k</option>
+                  <option label="$10k - $25k &nbsp;&nbsp;&nbsp; &#xf0d6; &#xf0d6; &#xf0d6;">$10k-$25k</option>
+                  <option label="$25k+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#xf0d6; &#xf0d6; &#xf0d6; &#xf0d6;">$25k+</option>
+                  <option>Budget is not yet determined</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+              
+                    
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                              <i class="fa fa-phone fa-lg"></i>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-phone fa-2x"></i> phone</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-skype fa-2x"></i> skype</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-quote-right fa-stack-1x fa-inverse"></i>
+                                  </span> hangout
+                                </a>
+                              </li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-envelope fa-2x"></i> email</a></li>                              
+                              
+                            </ul>
+                        </span>
+                        <input class="form-control" placeholder="Phone number" type="text"
+                               data-bv-stringlength-min="7"
+                               data-bv-stringlength-max="30"
+                               data-bv-stringlength-message="Please enter valid phone number" />
+                        
+                    </div>
+                    
+                    
+                    <!-- div class="form-group">
+                        <input type="text" class="form-control" placeholder="year"/>
+                    </div>
+                    <div class="form-group hidden">
+                      <input name="email" placeholder="Your email address" class="form-control" type="email"
+                             data-bv-notempty-message="The email address is required and cannot be empty"
+                             data-bv-emailaddress="true"
+                             data-bv-emailaddress-message="The email address is not a valid" />
+                    </div>
+                    <div class="form-group">
+                       <input name="phone" placeholder="Phone number" class="form-control" type="text"
+                              data-bv-stringlength-min="2"
+                              data-bv-stringlength-max="140"
+                              data-bv-stringlength-message="Phone should be at least 7 characters">
+                    </div -->
 
-              <div class="form-group">
-                <input name="phone" placeholder="Phone number" class="form-control" type="text">
-              </div>
-      
-              <div class="form-group">
-                <textarea name="nature" placeholder="Describe your project" class="form-control" rows="5"></textarea>
-              </div>
+              </div>              
+              
 
             </div>
             <div class="modal-footer">
               <div class="form-group">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="do-contact">Submit</button>
               </div">
               <p class="help-block text-center">or call at</p>
               <p class="help-block text-center"><strong>1.415.735.4337</strong></p>
@@ -430,11 +501,11 @@ We adapt to your feedback at every iteration.</p>
   
     </script>  
   
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
