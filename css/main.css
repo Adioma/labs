@@ -7,6 +7,10 @@
 	padding: 0px;
 }
 
+.bg-info{
+  background-color: #f6f6f6;
+}
+
 .updates .badge {
 	border-radius: 4px;
 	line-height: 16px;
@@ -99,17 +103,16 @@ footer {
 	margin-top: 60px;
 }
 
-.offer .glyphicon {
-	margin-top: 35px;
-	font-size: 48px;
-	color: #f56ba4;
+.offer {
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 {
 	background-image: url(../img/thumbnails-infographics.jpg);
 	background-repeat:no-repeat;
-	width: 175px;
-    height: 175px;
+	width: 165px;
+  height: 165px;
     -webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
 	border-radius: 500px;
@@ -123,27 +126,27 @@ footer {
 }
 
 .graphic-example-1 {
-	background-position: -200px 0;
+	background-position: -300px 0px;
 }
 
 .graphic-example-2 {
-	background-position: 0 0;
+	background-position: 0px 0;
 }
 
 .graphic-example-3 {
-	background-position: 0 -200px;
+	background-position: -600px 0;
 }
 
 .graphic-example-4 {
-	background-position: -400px 0px;
+	background-position: -0px -165px;
 }
 
 .graphic-example-5 {
-	background-position: -400px -200px;
+	background-position: -300px -165px;
 }
 
 .graphic-example-6 {
-	background-position: -200px -200px;
+	background-position: -600px -165px;
 }
 
 .example-thumbnail:hover {
@@ -160,6 +163,11 @@ footer {
 .carousel-control.right, .carousel-control.left {
 	background-image: none;
 	color: #3276b1;
+}
+
+#call-to-action {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* responsive styles */
@@ -191,10 +199,32 @@ footer {
     font-size: 28px;
   }
   
+  .portfolio-gr {
+    margin-bottom: 75px;
+  }
+  
+  .portfolio-gr small {
+    font-size: 14px;
+  }
+  
+  .portfolio-gr .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px
+   }
+  
   .work-examples p{
     text-align: center;
-    margin: 0 15%;
+//    margin: 0 15%;
   }
+  
+  .graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 {
+    -webkit-border-radius: 50px;
+	  -moz-border-radius: 50px;
+	  border-radius: 50px;
+	  width: 300px;
+	}
   
   .example-thumbnail > div {  
     margin: auto;
