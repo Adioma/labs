@@ -8,9 +8,10 @@
 }
 
 .navbar-brand .logo{
-  height: 50px;
-  width: 279px;
+  height: 45px;
+  width: 250px;
   background-image: url(../img/labs-logo.png);
+  background-size: 100% auto;
 }
 
 @media
@@ -21,6 +22,10 @@ screen and (min-device-pixel-ratio: 1.5) {
 		background-image: url(../img/labs-logo-high-res.png);
 		background-size: 100% auto;
 	}
+}
+
+.navbar-text {
+  margin-top: 10px;
 }
 
 .bg-info{
@@ -132,23 +137,6 @@ footer {
   margin-top: 10px;
 }
 
-.graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 {
-	background-image: url(../img/thumbnails-infographics.jpg);
-	background-repeat:no-repeat;
-	width: 165px;
-  height: 165px;
-    -webkit-border-radius: 500px;
-	-moz-border-radius: 500px;
-	border-radius: 500px;
-	margin: 0px 0px 80px 0;
-}
-
-.graphic-example-1, .graphic-example-2, .graphic-example-3, .graphic-example-4, .graphic-example-5, .graphic-example-6 : hover {
-	cursor: -webkit-zoom-in;
-	cursor: -moz-zoom-in;
-	cursor: crosshair;
-}
-
 .portfolio-gr {
     margin-bottom: 30px;
 }
@@ -194,12 +182,19 @@ footer {
   .portfolio-gr {
     margin-bottom: 50px;
   }
+  
 }
 
 @media (min-width: 1200px) {
 	.main-panel {
 		margin-top: 50px;
 	}
+}
+
+@media (min-width: 768px) {
+  .portfolio .modal-dialog {
+    width: 700px;
+  }
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
@@ -240,8 +235,8 @@ footer {
   }
   
   .navbar-header {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
 }
