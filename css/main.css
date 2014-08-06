@@ -10,7 +10,7 @@
 .navbar-brand .logo{
   height: 50px;
   width: 279px;
-  background-image: url(../img/labs-logo.png) 0 0 no-repeat;
+  background-image: url(../img/labs-logo.png);
 }
 
 @media
