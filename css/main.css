@@ -2,6 +2,10 @@
    Dress.is custom styles
    ========================================================================== */
 
+body {
+  color: #696969;
+}
+
 .navbar-brand {
 	margin: 0px;
 	padding: 0px;
@@ -9,9 +13,10 @@
 
 .navbar-brand .logo{
   height: 45px;
-  width: 250px;
-  background-image: url(../img/labs-logo.png);
+  width: 269px;
+  background-image: url(../img/fnf-labs-logo.png);
   background-size: 100% auto;
+  margin-top: 3px;
 }
 
 @media
@@ -19,7 +24,7 @@ screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (-moz-min-device-pixel-ratio: 1.5),
 screen and (min-device-pixel-ratio: 1.5) {
 	.navbar-brand .logo {
-		background-image: url(../img/labs-logo-high-res.png);
+		background-image: url(../img/fnf-labs-logo-high-res.png);
 		background-size: 100% auto;
 	}
 }
@@ -116,15 +121,23 @@ details summary:hover {
 	cursor: pointer;
 }
 
-.infographic-explanation {
-	
+.marketing i.fa, .marketing .selling-point p {
+  color: #428bca;
+}
+
+.marketing .selling-point {
+  margin-top: 20px;
+}
+
+.marketing .selling-point p {
+  font-size: 90%;
 }
 
 footer {
 	margin-top: 60px;
 }
 
-.offer, .work-examples, .FAQ{
+.offer, .work-examples, .product, .FAQ, .marketing{
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -162,6 +175,21 @@ footer {
   padding-bottom: 20px;
 }
 
+.fnf-divider {
+  margin-top: -7px;
+  color: #FFFFFF;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fnf-divider.reversed {
+  color: #f6f6f6;
+}
+
 /* responsive styles */
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -189,6 +217,10 @@ footer {
 	.main-panel {
 		margin-top: 50px;
 	}
+	
+	.marketing p, .marketing ul{
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -237,6 +269,10 @@ footer {
   .navbar-header {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  
+  .marketing h2, .marketing p{
+    text-align: center;
   }
   
 }
