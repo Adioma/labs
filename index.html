@@ -10,22 +10,23 @@
       <meta name="description" content="F&F Infographic Labs is winning team of information designers and visual journalists. We help companies to create the best infographics.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
       <style>
           body {
               padding-bottom: 20px;
           }
       </style>
       <link rel="stylesheet" href="css/main.css">
-      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
 
-      <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
   </head>
   <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        <![endif]-->    
+    <div id="bootstrapCssTest" class="hide"></div>
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -650,8 +651,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script> $.fn.modal || document.write('<script src="js/vendor/bootstrap.min.js"><\/script>')</script>
+    
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    
+    <script type="text/javascript">
+        if ($('#bootstrapCssTest').is(':visible') === true) {
+            $('<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+        }
+    </script>
+    
     <script src="js/main.js"></script>
 
     <script>
