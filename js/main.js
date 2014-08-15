@@ -3,8 +3,13 @@ $('#imagePrevModal').on('show.bs.modal', function (e) {
 	$('<img class="img-responsive" src="'+ e.relatedTarget.dataset.remoteImage+ '">').load(function() {
 		  $('#imagePrevModal .modal-body').html('');
 	      $(this).appendTo($('#imagePrevModal .modal-body'));
-	});
+	});	
 	
+	ga('send', 'pageview', '/modal/portfolio');
+});
+
+$('#infoModal').on('show.bs.modal', function (e) {
+	ga('send', 'pageview', '/modal/contact-us');
 });
 
 
@@ -43,6 +48,7 @@ $( document ).ready(function() {
               );
               $('#infoModal').modal('hide');
               $('#do-contact').prop('disabled', false);
+              ga('send', 'event', 'contact-us', 'submit', 'contact submitted');
             }
   });
 
