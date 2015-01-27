@@ -469,3 +469,11 @@ footer .footer-below {
 color: #ffffff;
 background-color: #1a242f;
 }
+
+.speaker-social {
+  padding-top: 5px;
+}
+.speaker-social a{
+  padding: 10px;
+  color: #000000;
+}
