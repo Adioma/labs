@@ -16,7 +16,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #e1e1e1;
 }
 
 h1,
@@ -473,7 +473,25 @@ background-color: #1a242f;
 .speaker-social {
   padding-top: 5px;
 }
+
 .speaker-social a{
   padding: 10px;
   color: #000000;
+}
+
+.learning-point {
+  color: #333;
+}
+
+#tickets, #tickets hr.star-light:after {
+  background: #496972;
+}
+
+#FAQ details {
+  margin-top: 25px;
+}
+
+#FAQ summary {
+  font-size: 24px;
+  padding-bottom: 10px;
 }
