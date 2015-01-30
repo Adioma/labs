@@ -16,7 +16,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #e1e1e1;
+    color: #d1d1d1;
 }
 
 h1,
@@ -107,43 +107,6 @@ header .intro-text .skills {
   margin: auto;
 }
 
-@media(min-width:768px) {
-    header .container {
-        padding: 150px 0 100px;
-    }
-
-    header .intro-text .name {
-        font-size: 3em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}
-
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
 
 .navbar-shrink .navbar-brand .navbar-logo {
   height: 30px;
@@ -186,15 +149,6 @@ section.success {
     background: #18bc9c;
 }
 
-@media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
-
-    section.first {
-        padding-top: 75px;
-    }
-}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -494,4 +448,57 @@ background-color: #1a242f;
 #FAQ summary {
   font-size: 24px;
   padding-bottom: 10px;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+    
+    .portfolio-modal .modal-content h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding: 150px 0 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 3em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
 }
