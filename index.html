@@ -30,6 +30,10 @@
           body {
               padding-bottom: 0px;
           }
+          
+          .input-append .btn.dropdown-toggle {
+              float: none;
+          }
       </style>
       <link rel="stylesheet" href="css/main.css">
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -554,8 +558,7 @@
                   <input name="name" placeholder="Full name" class="form-control" type="text" maxlength="140"
                           data-bv-stringlength-min="3"
                           data-bv-stringlength-message="Your name should be at least 3 characters">
-                </div>
-                
+                </div>              
               </div>
 
               <div class="form-group">
@@ -571,11 +574,11 @@
               </div>
                  
               <div class="form-group">
-                <textarea name="description" placeholder="Describe your project in a brief" class="form-control" 
+                <textarea name="description" placeholder="Describe your project in a brief: explain what you are trying to achieve with this infographic, why you are making it, what is the key message." class="form-control" 
                           rows="4" maxlength="1600"
                           data-bv-notempty="true"
                           data-bv-notempty-message="Project description is required and cannot be empty"
-                          data-bv-stringlength-min="50"
+                          data-bv-stringlength-min="30"
                           data-bv-stringlength-max="1600"
                           data-bv-stringlength-message="Description length must be between 50 and 1600 characters"></textarea>
                 <p class="help-block text-right small"><a href="http://anna.vc/post/114147909777/how-to-write-creative-brief-for-infographic" target="_blank">how to write creative brief <i class="fa fa-question-circle"></i></a></p>
@@ -588,74 +591,130 @@
                     <option disabled selected>What is your budget for this project?</option>
                     <option label="Above $100k">Above $100k</option>
                     <option label="$25k - $100k">$25k - $100k</option>
-                    <option label="$10 - $25k">$10 - $25k</option>
+                    <option label="$10K - $25k">$10k - $25k</option>
                     <option label="$5000 - $10k">$5000 - $10k</option>
                   </select>
                 </div>
               </div>
-              
-              <div class="form-group" id="contact-group">
-                                  
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="contact-picker" data-toggle="dropdown" data-contact-type="phone">
-                              <i class="fa fa-phone fa-lg"></i>
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="contact-picker">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="phone"><i class="fa fa-phone fa-lg"></i> phone</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="skype"><i class="fa fa-skype  fa-lg"></i> skype</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="hangout"><i class="fa fa-quote-right fa-lg"></i> hangouts</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="email"><i class="fa fa-envelope fa-lg"></i> email</a></li>                              
-                            </ul>
-                        </span>
-                        <input id="contact-data" name="contact" class="form-control" placeholder="How can we contact you?" type="text"
-                               data-bv-enabled
-                               data-bv-stringlength-min="7"
-                               data-bv-stringlength-max="30"
-                               data-bv-stringlength-message="Please enter valid phone number" 
-                               />
-                    </div>
-              </div>        
-              
-              
-              
-             
-              
+                                                   
             </div> <!-- /.modal-body -->
 
             <!-- more details form -->
-            <!-- div class="modal-body" style="border-top: 1px solid #e5e5e5;">
+            <div class="modal-body" style="border-top: 1px solid #e5e5e5;">
                               <div class="form-group" id="contact-group">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title text-center">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Tell Us More Details About Your Infographic
+                      <h4 class="panel-title text-center" style="color: grey;">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="text-primary">
+                          Tell us more details about your infographic
                         </a>
                       </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="panel-body">
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-A" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-B" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-C" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-D" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-E" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail " src="http://placehold.it/650x150?text=Option-F" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail" src="http://placehold.it/650x150?text=Option-G" /></div>
-                              <div class="col-sm-12"><img class="img-responsive img-thumbnail " src="http://placehold.it/650x150?text=Option-H" /></div>
-                           </div>
-                        </div>
+                              <div class="form-group">
+                                <p class="help-block">Do you have a data set/list of facts?</p>
+                                <div class="input-group">
+                                  <span class="input-group-addon" ><i class="fa fa-table"></i>&nbsp;</span>
+                                  <input name="data-set" placeholder="https://docs.google.com/spreadsheets/d/2aBcd.." class="form-control" type="text" maxlength="140" data-bv-excluded="true">
+                                </div>
+                                <p class="help-block text-right small">examples of <a href="https://docs.google.com/spreadsheets/d/1uNIHy7LGKqMNENeHnjAL8cNYepfGxEeVMIf5_LAazRQ" target="_blank">dataset</a> and <a href="https://docs.google.com/spreadsheets/d/1uNIHy7LGKqMNENeHnjAL8cNYepfGxEeVMIf5_LAazRQ" target="_blank">textual narrative</a></p>
+                              </div>    
+
+                              <div class="form-group">
+                                <p class="help-block">Do you have a visual analogy you want to use as a starting point?</p>
+                                <div class="input-group">
+                                  <span class="input-group-addon" ><i class="fa fa-sitemap"></i>&nbsp;</span>
+                                  <input name="visual-analogy" placeholder="Timeline, tree, scales, head, etc.." class="form-control" type="text" maxlength="255" data-bv-excluded="true">
+                                </div>
+                                <p class="help-block text-right small"><a href="http://anna.vc/post/112863438962/how-to-think-using-visual-analogies  " target="_blank">what is visual analogy <i class="fa fa-question-circle"></i></a></p>
+                              </div> 
+                                                                                                                                                            
+                              <div class="form-group">
+                                <p class="help-block">Can you provide a link to a sketch or any other visual reference?</p>
+                                <div class="input-group">
+                                  <span class="input-group-addon" ><i class="fa fa-photo"></i>&nbsp;</span>
+                                  <input name="sketch" placeholder="https://dl.dropboxusercontent.com/u/1234567/my_sketch.jpg" class="form-control" type="text" maxlength="140"  data-bv-excluded="true">
+                                </div> 
+                              </div>  
+ 
+                              <div class="form-group">
+                                <p class="help-block">Link to your primary distribution channel (Facebook, blog, email list, storefront, etc.)</p>
+                                <div class="input-group">
+                                  <span class="input-group-addon" ><i class="fa fa-paper-plane"></i>&nbsp;</span>
+                                  <input name="distribution-channel" placeholder="http://facebook.com/fundersandfounders" class="form-control" type="text" maxlength="340"  data-bv-excluded="true">
+                                </div> 
+                              </div>  
+                                                            
+                              <div class="form-group">
+                                <div class="input-group">  
+                                  <p class="help-block"> How else do you want to distribute the graphic?</p>
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-6 col-sm-6">
+                                        <div class="checkbox">
+                                          <label><input name="distribution-type" type="checkbox" value="on a website/blog">website/blog</label>
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input name="distribution-type" type="checkbox" value="via social media">social media</label>
+                                        </div>
+                                        <div class="checkbox ">
+                                          <label><input name="distribution-type" type="checkbox" value="in a presentation">presentation</label>
+                                        </div>
+                                        <div class="checkbox ">
+                                          <label><input name="distribution-type" type="checkbox" value="via email">email</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 col-sm-6">
+                                        <div class="checkbox">
+                                          <label><input name="distribution-type" type="checkbox" value="as a booklet">booklet</label>
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input name="distribution-type" type="checkbox" value="as a poster">poster</label>
+                                        </div>
+                                        <div class="checkbox ">
+                                          <label><input name="distribution-type" type="checkbox" value="in a magazine">magazine</label>
+                                        </div>
+                                        <div class="checkbox ">
+                                          <label><input name="distribution-type" type="checkbox" value="in a book">book</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div><!-- /.container-fluid -->
+                                </div>
+                              </div>                                                                               
+
+                              <div class="form-group" id="contact-group">
+                                  
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="contact-picker" data-toggle="dropdown" data-contact-type="phone">
+                                              <i class="fa fa-phone fa-lg"></i>
+                                              <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="contact-picker">
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="phone"><i class="fa fa-phone fa-lg"></i> phone</a></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="skype"><i class="fa fa-skype  fa-lg"></i> skype</a></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="facebook"><i class="fa fa-facebook fa-lg"></i> facebook</a></li>
+                                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-contact-type="email"><i class="fa fa-envelope fa-lg"></i> email</a></li>                              
+                                            </ul>
+                                        </span>
+                                        <input id="contact-data" name="contact" class="form-control" placeholder="How can we contact you?" type="text"
+                                               data-bv-enabled
+                                               data-bv-stringlength-min="7"
+                                               data-bv-stringlength-max="30"
+                                               data-bv-stringlength-message="Please enter valid phone number" 
+                                               />
+                                    </div>
+                              </div>
+
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>        
-            </div --> <!-- /.modal-body -->
+                </div> 
+              </div>  <!-- /.panel-group -->       
+            </div> <!-- /.modal-body -->
             
             
             

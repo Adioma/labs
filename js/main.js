@@ -29,16 +29,50 @@ $( document ).ready(function() {
             if ( $('#contact-us').data('bootstrapValidator').isValid() ) {
               var subject = $( "input[name=company]" ).val();
               var body = "Hi,\n I would like to make an infographic about '" + subject + "'.\n" +
-                         "Here is my infographic project description:" + "\n" + $("textarea[name=description]" ).val() + "\n";
+                         "Here is my infographic project description:" + "\n" + $("textarea[name=description]" ).val() + "\n\n";
+              var dataSet = $("input[name=data-set]" ).val();
+              if ( dataSet ) {
+                body += "\n Data Set: " + dataSet + "\n";
+              }
+              var visualAnalogy = $("input[name=visual-analogy]" ).val();
+              if ( visualAnalogy ) {
+                body += "\n Visual analogy: " + visualAnalogy + "\n";
+              }
+              var sketch = $("input[name=sketch]" ).val();
+              if ( sketch ) {
+                body += "\n Sketch: " + sketch + "\n";
+              }
+              var distributionChannel = $("input[name=distribution-channel]" ).val();
+              if ( distributionChannel ) {
+                body += "\n Primary distribution channel : " + distributionChannel + "\n";
+              }
+              var distributionTypes = $("input[type='checkbox'][name='distribution-type']:checked");
+              if (distributionTypes && distributionTypes.length > 0) {
+                body += "\n I also want to distribute it ";
+                distributionTypes.each(function (i, item) {
+                  if (i > 0) {
+                    body += ", ";
+                  }
+                  body += item.value;
+                });
+                body +=  "\n";
+              }
+                            
               var budget = $("select[name=budget]" ).val();
               if ( budget ) {
                 body += "\n Budget: " + budget + "\n";
               }
-              if ( $("input[name=name]" ).val() ) {
-                body += "\n" + $("input[name=name]" ).val();
+              var name = $("input[name=name]" ).val();
+              var contact = $("input[name=contact]" ).val();
+              
+              if (name && contact) {
+                body += "\n";
+              }            
+              if ( name ) {
+                body += "\n" + name;
               }
-              if ( $("input[name=contact]").val() ) {
-                body += "\n" + $("#contact-picker").data('contactType') + ": " + $("input[name=contact]" ).val();
+              if ( contact ) {
+                body += "\n" + $("#contact-picker").data('contactType') + ": " + contact;
               }
               var address = 'i' + 'n' + 'f' + 'o' + 'graphics' + '@' + 'fnf' + '.' + 'vc';
               $(location).attr('href', 'mailto:' + address + '?subject='
@@ -66,8 +100,8 @@ $( document ).ready(function() {
           case "skype":
               placeholder  = "your Skype ID"
               break;
-          case "hangout":
-              placeholder  = "your Google Hangouts ID"
+          case "facebook":
+              placeholder  = "your Facebook Profile"
               break;
           case "email":
               placeholder  = "your alternative email"
